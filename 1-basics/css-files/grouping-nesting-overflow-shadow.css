@@ -1,0 +1,46 @@
+/* grouping-nesting-dimensions-overflow-shadow-alignment */
+.one {
+    border-bottom: 2px solid red;
+    color: red;
+}
+.two {
+    border-bottom: 2px solid green;
+    color: green;
+}
+.three {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.four {
+    border-bottom: 2px solid black;
+    color: black;
+} 
+
+/* grouping selectors of classes */
+.one,
+.two,
+.three,
+.four,
+.my-p{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eee;
+} 
+
+/* .grouping_selectors{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eee;
+} */
+
+section .one1{
+    color: red;
+}
+
+section article{
+    color: green;
+}
+
+.nesting{
+    color:purple;
+}

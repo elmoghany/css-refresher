@@ -1,0 +1,43 @@
+.inhertiance-section, .inheritance-article{
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red;
+}
+section p{
+    border: 2px solid;
+    border-color:inherit;
+    padding: inherit;
+}
+.fonts .with-ser{
+    padding: 20px;
+    background-color: #f5f533;
+}
+.with-ser{
+    font-family: 'Times New Roman', Times, serif;
+}
+.without-ser{
+    font-family: 'Cairo', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 200;
+    font-weight: bold;
+    cursor: pointer;
+    cursor: grab;
+    clear: both;
+    float: inline-end;
+}
+/*units
+default is 16px
+px
+em time - inherited ... 2em ... 7ybos el inherited kam * 2
+rem - root time ... html size
+vw - view port width
+5vw 1% view port * 5 ----- good for responsiveness
+percentage
+read vim
+read vh
+
+*/

@@ -1,0 +1,78 @@
+/*
+element styling connect css with class, id, div, p
+background color, attachment, position, 
+background size, repeat, image
+padding
+margin
+border
+outline
+*/
+
+/* comments using ctrl + slash */
+Selector{
+    property: Value;
+    propertyTwo: Value;
+}
+
+/* DOT follow by CLASS NAME 
+.class_name_here
+or
+hash followed by id name 
+#id_name_here
+*/
+.my-p {
+    color: purple;
+    font-size: 40px;
+    background-color: #F1F1F1;
+    /* margin-top: -30px; */
+    margin-left:auto;
+    margin-right:auto;
+    /* same as margin:auto without width; */
+    /* border-color:red green yellow blue; */
+    /* border-width: 2px;
+    border-color:red;
+    border-style:solid; */
+    border: 10px solid red;
+    width:300px;
+    /* outline is outside the border of the section */
+    /* outline: ; */
+}
+#my-p{
+    color: blue;
+    font-size: 50px;
+}
+/*for any other paragraph ... do the following
+p {
+
+}
+*/
+p {
+    color: green;
+}
+div{
+        /*255,255,255 white
+    0,0,0 black
+    alpha channel (0,0,0 /50%)*/
+    background-color: red;
+    background-color: rgb(0 255 155 /50%);
+    background-color: #FF0000;
+    background-color: #00FF00;
+    background-color: #0000FF;
+    background-color: #F1F1F1;
+    background-image: url('src/photo1.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    
+    background-repeat: no-repeat;
+    /* to have a bg scrolling down with you */
+    background-attachment: scroll; 
+    background-position: right top;
+    /* size: auto, ****contain=fully visible, cover the whole page, x y; */
+    background-size: 100px 100px; 
+    /* padding: top right bottom left */
+    padding:10px 10px 10px;
+    padding: top 10px;
+    padding: bottom 10px;
+
+}

@@ -1,0 +1,59 @@
+.rad {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 6px;
+    /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+section {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow:
+        0 0 10px 0 #F10000,
+        0 0 10px 0 #000,
+        0 0 10px 0 #080,
+        0 0 10px 0 #00f,
+        0 0 10px 0 yellow;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 1px solid red !important;
+}
+/*important if i want to override styling in any other file which i am not able to change*/
+.transition {
+    background-color: #EEE;
+    width: 200px;
+    height: 100px;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    transition: all 2s 0.5s linear;
+}
+.transition:hover {
+    width: 280px;
+    height: 120px;
+}

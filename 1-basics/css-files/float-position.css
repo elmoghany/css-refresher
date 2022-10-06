@@ -1,0 +1,85 @@
+/*
+    float
+    clear
+    opacity
+    position
+        static - default
+        relative
+        absolute
+        fixed
+        sticky
+*/
+.float{
+    background-color: red;
+    padding: 20px;
+    overflow: hidden;
+    /*not good idea ... height:60px;*/
+}
+.float div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    /*3shan 7aot product 1 2 3 ...
+    b7otohom fe inline-block i.e:
+    display: inline-block;
+    width: 24%;
+    */
+    width: 25%;
+    float: left; /*bt5ly mafeesh spacing mabeen el 3anaser*/
+}
+
+.clear{
+    clear: both;
+}
+/*opacity & position*/
+.opacity1{
+    background-color: red;
+    opacity: 0.6;/*y3ny el 3onsor zaher ad eh*/
+    position: absolute;
+    top:5px;
+    bottom:0;
+    right:0;
+}
+.opacity2{
+    background-color: rgb(255 0 0 / 10%);
+    position: static
+}
+.opacity3{
+    background-color: green;
+    position: absolute;
+    /*
+    use one or two of the following alone
+    bottom:0;
+    top:0;
+    right;
+    left;
+    */
+}
+.opacity4{
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    width:500px;
+    height:500px;
+    position: relative;
+
+}
+
+.opacity5{
+    bottom:0;
+    left:0;
+    background-color: purple;
+    position: fixed;
+}
+body{
+    min-height: 6000px;;
+}
+#sticky-scroll{
+    background-color:red;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    position: sticky;
+    top:20px;
+}

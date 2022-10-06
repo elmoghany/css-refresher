@@ -1,0 +1,90 @@
+/*
+Block
+...Take full width if no width
+...Add line break
+...Respect padding, margin, width, height
+Inline
+...
+...DO NOT add line break
+...do not respect width, height "top & bottom"
+...respect padding and margin "just left & right"
+...respect top & bottom if "display: block"
+Inline Block
+    display:inline-block ... respect everything.
+	byb2a kaman 3ala ad el kelma
+	
+	
+Display: none ... used with js & but remove its space
+visibility: visible or hidden ... by5fy el 3onsor w byb2a makano mwgoda
+    used with animation dyman as u scroll down msln
+    visibility 7agza makanha
+*/
+.a1{
+	background-color: red;
+	padding: 10px;
+	width: fit-content;
+	/*	display: inline-block;
+		height:40px;
+		min-width:150px;
+		max-width:400px;
+	*/
+}
+article {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    visibility: visible;
+    /* display:none; /* used with js to open/close display/ */
+}
+span {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    display:inline-block; /*keda ana 7awlto mn inline to block type*/
+    /* width: 10px; */
+}
+.overflow .overflow{
+	background-color: #eee;
+	width: 200px;
+	/*height: 200px;*/
+	margin: 20px 10px;
+	overflow: hidden; /*overflow-x: 10px overflow-y:20px overflow:scroll overflow:hidden overflow:visible default*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.overflow .overflow:hover{
+	overflow: visible;
+}
+/*text shadow ... align ... direction */
+.colorrr .colorrrr{
+	background-color: #f9f9f9;
+	color: purple;
+	/*text-shadow: H-shadow v-shadow blur color*/
+	text-shadow: 0 0 0 red;
+	text-align: right; /*left, right center*/
+	direction: rtl;
+	vertical-align: top; /*top bottom middle*/
+}
+/*text decoration & transform
+text-decoration: line-through, underline, overline
+button
+*/
+.decoration{
+	background-color: blue;
+	color: grey;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform:uppercase;
+	/*el feroos space been letter & letter*/
+	letter-spacing: 2px; 
+	/*el far2 mabeen word & word*/
+	word-spacing: 10px; 
+	width:100px;
+	white-space: nowrap; /*wrap, normal*/
+	word-break: break-word;
+	/*letter indenting ... el space el 2abl el kalam*/
+	text-indent:10px;
+	line-height: 1; /*100% 1.6 160% */
+}

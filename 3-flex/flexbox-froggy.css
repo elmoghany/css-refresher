@@ -1,0 +1,188 @@
+/*
+justify-content:
+"horizontally -----" 
+flex-start
+                flex-end
+        center
+s p a c e    b e t w e e n
+...space    aro     und...
+    spac    eve    nly
+
+align-content:
+"vertically|||"
+f |         
+l\/         
+e  d    c
+x  n    e
+-  e    n
+s  -    t
+t  x    e
+a  e /\ r
+r  l  |
+t  f  |
++ stretch everywhere
+
+Align-items:
+"vertically |||"
+start   ^^^^
+end     ____
+center  ----
+stretch XXXX
+
+flex-direction:
+row ---->
+row-reverse  <----
+column \/
+column-revese /\
+
+order: 1;
+align-self:end; similar to align-items
+
+flex-wrap:wrap, nowrap, wrap-reverse
+
+flex-wrap: wrap;
+flex-direction: column-reverse
+flex-flow = (flex-wrap + flex-direction)
+same as 
+flex-flow: column wrap
+column-reverse
+wrap-reverse
+
+**************************************
+**************************************
+**************************************
+
+frog on the left, move it to the right 
+by using the justify-content property, 
+which aligns items horizontally
+=== justify-content: flex-end
+
+2 frogs on the left, move both by 1 cell to the right/center.
+justify-content: center
+
+1,2,3,4,5
+|,|,|
+|, ,|, ,|   target
+Help all three frogs find their lilypads 
+just by using justify-content. 
+This time, the lilypads have lots of space all around them.
+justify-content: space-around
+
+1,2,3,4,5 
+|,|,|       initial
+|, ,|, ,|   target
+space is different than before!!!
+Now the lilypads on the edges have drifted to the shore, 
+increasing the space between them. Use justify-content. 
+This time, the lilypads have equal spacing between them.
+justify-content: space-between
+
+
+help the frogs get to the bottom of the pond.
+1,2,3
+|,|,| initial
+....
+....
+|,|,| target is down
+align-items: flex-end;
+
+move x to target
+1,2,3
+X.... initial
+.,|,. target
+.....
+justify-content: center;
+align-items: center;
+
+move xyz to targets
+x ,y, z, ., ., initial
+...
+...
+...
+ |, , ,|, , ,| target
+justify-content: space-around;
+align-items: flex-end;
+
+
+x, y, z,        initial
+      |, |, |   target
+flex-direction: row-reverse
+
+x, y, z,        initial
+|
+|
+|               targets
+flex-direction:column;
+
+(x is green, y is yellow, z is red)
+x, y, z, , , initial
+R, y, g, , , target
+flex-direction:row-reverse;
+justify-content: left;
+
+X, Y, Z, , , initial
+.
+.
+G
+Y
+R               targets
+flex-direction: column;
+justify-content: end
+
+
+X, Y, Z, , ,    initial
+R
+.
+y
+.
+G               targets
+flex-direction: column-reverse;
+justify-content: space-between
+
+
+X, Y, Z , ,     initial
+...
+...
+ , R, Y, G, ,   target
+justify-content: center;
+flex-direction: row-reverse;
+align-items: end;
+
+change order of yellow
+.yellow{
+    order:3
+}
+
+X,X,X,R,X initial
+R,G,G,G,G target
+send r to r
+order: -1
+
+Send x to y
+G,G,X,G,G
+...
+    Y
+.yellow{
+    align-self: end
+}
+
+order: 1;
+align-self:end;
+
+flex-wrap:wrap
+
+flex-wrap: wrap;
+flex-direction: column-reverse
+
+prior is equal to
+
+flex-flow: column wrap
+
+
+
+
+flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+justify-content: center;
+
+*/
