@@ -1,0 +1,195 @@
+/* grid scale
+    1- digit 1,2,3,..
+    2- the span keyword
+    https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ie4paaplgo8rwf4fd41o.png
+    https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bumrjjy06owkahoe49y3.png
+*/
+
+/* clear out default browser styles */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+/* select all boxes and style them with centered grid and background color */
+/* children grid */
+/*
+grid-column: span       TO DO
+grid-column: X / Y      TO DO
+grid-column-start       TO DO
+grid-column-end         TO DO
+grid-row-start          TO DO
+grid-row-end            TO DO
+grid-area
+justify-self
+align-self
+place-self
+place-items             DONE
+*/
+[class^="box-"] {
+    background-color: skyblue;
+  /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+    
+}
+.box-1 {
+    /* grid scale & shorthand x / y */
+    /* columns */
+    /*
+    grid-column-start : 1;
+    grid-column-end : 10;
+    grid-column: 1/10; 
+    grid-column : span 9;
+    */
+        /************************************/
+        /************************************/
+        /************************************/
+
+    /* ROWS */
+    /* grid-row-start: 1;
+    grid-row-end: 11;
+    grid-row : 1/11;
+    grid-row : span 10;
+ */
+        /************************************/
+        /************************************/
+        /************************************/
+
+        /* grid-area: A; */
+
+        /************************************/
+        /************************************/
+        /************************************/
+    /*start,end,center,stretch*/
+    /*position child around x-axis*/
+    /* justify-self : start;   */
+
+        /************************************/
+        /************************************/
+        /************************************/
+
+    align-self : start;  
+
+}
+        /************************************/
+        /************************************/
+        /************************************/
+
+/* grid-template-areas
+.box-2{
+    grid-area: B;
+}
+.box-3{
+    grid-area: C;
+}
+*/
+
+/* parent grid */
+/*
+grid-template-columns   DONE
+grid-template-rows      DONE
+grid-template-areas     DONE
+gap                     DONE
+column-gap              DONE
+row-gap                 DONE
+justify-items           DONE
+align-items             DONE
+justify-content         DONE
+align-content           DONE
+area-gap
+place-items
+place-content
+*/
+/* place gaps between boxes */
+.container {
+    display: grid;
+
+        /* grid scale */
+/* A B C D*/
+    /* repeat */
+        /* grid-template-columns : 1fr 1fr 1fr 1fr 1fr ; */
+        height: 100vh; /* made column take space of all rows down if rows not decided*/
+        /* for grid-column & grid-row
+        gap:50px;
+        grid-template-columns : repeat(12,1fr);
+        grid-template-rows: repeat(12, 1fr);
+        */
+        
+        /************************************/
+        /************************************/
+        /************************************/
+        /* gap: 20px; */
+        /* grid-template-areas: 
+        "A A A A   A A A A   A A A A"
+        "B B B B   B B B B   B B C C"
+        "B B B B   B B B B   B B C C"; */
+        
+        /************************************/
+        /************************************/
+        /************************************/
+
+        gap:25px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        
+}
+
+/* 
+for parents
+place-content: align-content / justify-content
+                    Y-axis    /    X-axis
+align-content : center;
+justify-content : end;
+place-content : center / end ;
+
+*/
+
+        /************************************/
+        /************************************/
+        /************************************/
+
+/*
+for children
+place-item: align-item / justify-item
+                    Y-axis    /    X-axis
+align-items : end;
+justify-items : center;
+place-items : end / center ;
+*/
+
+        /************************************/
+        /************************************/
+        /************************************/
+/*
+place-self: align-self / justify-self
+                Y-axis /   X-axis
+align-self : start ;
+justify-self : end ;
+place-self : start / end ;
+*/
+        /************************************/
+        /************************************/
+        /************************************/
+
+/*
+grid-template-rows : 100px 100px;
+grid-template-columns : 200px 200px;
+grid-template : 100px 100px / 200px 200px;
+
+
+gap: row-gap column-gap
+OR
+gap: 1-equal-value
+*/
+        /************************************/
+        /************************************/
+        /************************************/

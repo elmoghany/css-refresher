@@ -1,0 +1,76 @@
+/*
+flex-direction:     row, column, 
+                    column-reverse, row-reverse
+justify-content:    flex-start, flex-end, center
+                    space-between, space-around, space-evenly
+align-content:      flex-start, flex-end, center
+                    space-between, space-around, stretch
+align-items:        flex-start, flex-end, center
+                    stretch, baseline
+align-self:         flex-start, flex-end, center,
+                    auto, baseline, stretch
+order:              value
+flex-grow:          value
+flex-shrink:        value
+flex-wrap:          nowrap, wrap, wrap-reverse
+*/
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction : row;
+    /* justify-content: flex-start; */
+
+    /*************************/
+    /*************************/
+    /*************************/
+
+    /* align-content: center; */
+    /* // without this line, align-content won't work */
+    /* flex-wrap: wrap; */
+    /*************************/
+    /*************************/
+    /*************************/
+
+    /* align-items: flex-end; */
+    /*************************/
+    /*************************/
+    /*************************/
+
+    
+}
+
+[class^="box-"] {
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+
+    /* To view the letter better */
+    font-size: 65px;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+/* .box-2{
+    align-self : center;
+} */
+
+/* .box-1{
+    flex-grow: 1;
+}
+.box-2{
+    flex-grow: 5;
+}
+.box-1{
+    flex-grow: 1;
+} */
+
+/*
+flex-basis: 10em
+flex: flex-grow flex-shrink flex-basis
+flex-flow: flex-direction flex-wrap
+place-content: align-content justify-content
+
+*/

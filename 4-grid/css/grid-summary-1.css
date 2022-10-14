@@ -1,0 +1,241 @@
+/* clear out default browser styles */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+/* select all boxes and style them with centered grid and background color */
+/* children grid */
+/*
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+grid-area
+justify-self
+align-self
+place-self
+*/
+[class^="box-"] {
+    background-color: skyblue;
+  /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+}
+
+/* parent grid */
+/*
+grid-template-columns   TO-DO
+grid-template-rows      TO-DO
+grid-template-areas     TO-DO
+gap                     TO-DO
+column-gap              TO-DO
+row-gap                 TO-DO
+justify-items           TO-DO
+align-items             TO-DO
+justify-content         TO-DO
+align-content           TO-DO
+area-gap
+place-items
+place-content
+*/
+/* place gaps between boxes */
+.container {
+    display: grid;
+
+/* A B C*/
+        /* grid-template-columns */
+        /* FOR EQUAL ROWS & COLUMNS GAP */
+        /* gap: 20px; */
+        /* grid-template-columns: 200px auto 100px; */
+        /* grid-template-columns: repeat(3,1fr);  */
+        /* same as repeat(3,auto) */
+        
+        /********************************************/
+        /********************************************/
+
+        /* grid-template-rows */
+        /* gap: 20px; */
+        /* grid-template-rows: 200px auto 100px; */
+        /* grid-template-rows: repeat(3,1fr); */
+
+        /********************************************/
+        /********************************************/
+
+        /* grid-template-areas */
+        /* add  those outside of the container 
+        used with grid-template-areas */
+        /* .box-1{
+            grid-area: A;
+        }
+        .box-2{
+            grid-area: B;
+        }
+        .box-3{
+            grid-area: C;
+        } */
+        /* gap: 20px;
+        height: 100vh;
+        grid-template-areas: 
+        "A A A A   A A A A   A A A A"
+        "B B B B   B B B C   C C C C"
+        "B B B B   B B B C   C C C C"; */
+
+        /********************************************/
+        /********************************************/
+
+        /* column gap */
+        /* grid-template-columns: 100px 100px 100px; */
+        /* column-gap:  50px;  */
+        /* means 25px then grid line then 25px */
+        /* A<25px>|<25px>B*/
+
+        /********************************************/
+        /********************************************/
+
+        /* row gap */
+        /* grid-template-rows: 100px 100px 100px;
+        row-gap:  50px; */
+        /*   A   */
+        /* 25px  */
+        /*   B   */
+        
+        /********************************************/
+        /********************************************/
+
+/* Adding D to HTML*/
+    /* A B C D*/
+    /* items    == children */
+    /* justify  == x-axis */
+    /* justify items X-axis */
+    /* CONTROL The children items NOT the container */
+    /* position grid-items (children) around X-Axis */
+        /* each box is 200px by 200px */
+        /* gap: 50px;
+        height: 100vh;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px;
+        justify-items: center; */
+        /*start, end, center, stretch*/
+        /* A START        |  B START         */
+        /* C START        |  D START         */
+        /*********************************/
+        /*********************************/
+        /*          A END |            B END */
+        /*          C END |            C END */
+        /*********************************/
+        /*********************************/
+        /*    A CENTER    |     B CENTER     */
+        /*    C CENTER    |     D CENTER     */
+        /*********************************/
+        /*********************************/
+        /*A - S T R E T C H | B - S T R E T C H  */
+        /*C - S T R E T C H | D - S T R E T C H  */
+
+    /* A B C D */
+    /* items == children */
+    /* align == y-aix    */
+    /* align-items Y-AXIS */
+    /* CONTROL The children items NOT the container */
+    /* position grid-items (children) around Y-axis */
+        /* each box is 200px by 200px */
+        /* gap: 50px;
+        height: 100vh;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px;
+        align-items: end; */
+        /*start, end, center, stretch*/
+        /*similar to justify items x axis 
+        start is the start of y axi
+        end is the end of y-axis*/
+            
+    
+    /* Justify-content */
+    /* content == container */
+    /* justify == x-axis*/
+    /* position your grid [Basically everything] around x-axis*/
+    /* position the container itself not the items/children! */
+        /* each box is 200px by 200px */
+        /* gap: 50px;
+        height: 100vh;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px;
+        justify-content: space-between; */
+        /*start, end, center, stretch*/
+        /* NEW  NEW   NEW   NEW   NEW   */
+        /* space-between, space-around, space-evenly */
+        /* A B START                    */
+        /* C D START                    */
+        /********************************/
+        /********************************/
+        /*                      A B END */
+        /*                      C D END */
+        /********************************/
+        /********************************/
+        /*          A B CENTER          */
+        /*          C D CENTER          */
+        /*********************************/
+        /*********************************/
+        /*A - S T R E T C H | B - S T R E T C H  */
+        /*C - S T R E T C H | D - S T R E T C H  */
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*  s p a c e  -  b e t w e e n */
+        /* A                        B*/
+        /* C                        D*/
+                    /*OR*/
+        /* A          B              C*/
+        /* D          E              F*/
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*  s p a c e  -  a r o u n d   */
+        /*  half & equal space   */
+        /* half "A"  e q u a l  "B" half*/
+        /* half "C"  e q u a l  "D" half*/
+                    /*OR*/
+        /* half "A" e q u a l "B" e q u a l "C" half*/
+        /* half "C" e q u a l "D" e q u a l "E" half*/
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*  s p a c e  -  e v e n l y   */
+        /* equal "A" equal "B" equal*/
+        /* equal "C" equal "D" equal*/
+                    /*OR*/
+        /* equal "A" equal "B" equal "C" equal*/
+        /* equal "C" equal "D" equal "E" equal*/
+
+
+    /* align-content */
+    /* content == container */
+    /* align == y-axis*/
+    /* position your grid [Basically everything] around y-axis*/
+    /* position the container itself not the items/children! */
+        /* each box is 200px by 200px */
+        /* gap: 50px;
+        height: 100vh;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 200px;
+        align-content: space-between; */
+        /*similar to justify-content but along x-axis*/
+
+
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*********************************/
+        /*********************************/
+
+
+
+}

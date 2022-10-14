@@ -1,0 +1,157 @@
+  - display: grid | inline-grid
+  
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+
+  - gap: [Row Gap] [Column Gap]
+
+  - justify-content
+  - align-content
+
+  - grid-template-areas
+
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+
+  - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+
+	grid-column-start:
+	
+
+1)	
+Move X in grid to T
+X, ,T, , ,
+grid-column-start:3;
+
+2)
+Move X in grid to T
+X,-,-,-,-,T
+grid-column-start:5;
+
+3)
+grid-column-start:1;
+water all carrots in C
+C,C,C,-,-,-
+W,-,-,-,-,-
+grid-column-end:4;
+
+4)
+grid-column-start:5;
+water all carrots in C
+-,-,C,C,C,-
+-,-,-,-,-,W
+grid-column-end:2
+
+5) 
+grid-column-start:1;
+Try setting grid to neg value
+C,C,C,C,-
+W,-,-,-,-
+grid-column-end:-2
+
+6)
+-,-,-,C,-
+W,-,-,-,-
+grid-column-start:-3
+
+7)
+grid-column-start:2
+-,C,C,-,-
+-,W,-,-,-
+use span with end position
+grid-column-end: span 2;
+
+8)
+grid-column-start: 1;
+C,C,C,C,C
+W,-,-,-,-
+grid-column-end: span 5;
+
+10)
+-,-,-,C,C
+W,-,-,-,-   start / end
+grid-column: 4 / 6
+
+11)
+-,C,C,C,-
+W,-,-,-,-   start / spand to end 3
+grid-column: 2 / span 3
+
+12)
+grid-row-start: 3
+
+13)
+grid-row: 3 / 6
+
+14)
+W,-,-,-,-,-
+-,-,
+....
+-,-, row 5
+grid-column:2;
+grid-row:5;
+
+15) 
+-,4x4 target
+-,
+-,
+-,
+-,
+grid-column: 2 / span 4;
+grid-row: 1 / span 5;
+
+16)
+grid-area: grid-row-start, grid-column-start, grid-row-end, grid-column-end.
+-,C,C,C,C
+-,C,C,C,C
+-,C,C,C,C
+grid-area: 1 / 2 / 4 / 6;
+
+17)
+grid-area: 2 / 3 / 5 / 6
+
+18)
+order:1
+
+19)
+order: -1
+
+20)
+But you can set the grid up however you like. 
+Give grid-template-columns a new value to water your carrots. 
+You'll want to set the width of the 1st column to be 50%.
+This was done with the rules grid-template-columns: 20% 20% 20% 20% 20%; 
+and grid-template-rows: 20% 20% 20% 20% 20%; 
+Each rule has five values which create five columns, 
+each set to 20% of the overall width of the garden.
+grid-template-columns: 50% auto auto auto auto;
+
+21)
+ create eight columns each with 12.5% width. This way you won't overwater your garden.
+grid-template-columns: repeat(8, 12.5%)
+
+22)
+grid-template-columns: 100px 3em 40%
+
+23)
+grid-template-columns: 1fr 5fr;
+
+24)
+grid-template-columns: 50px 1fr 1fr 1fr 50px
+
+25)
+Now there is a 75 pixel column of weeds on the left side of your garden. 
+3/5 of the remaining space is growing carrots, 
+while 2/5 has been overrun with weeds.
+grid-template-columns: 75px 3fr 2fr;
+
+26)
+grid-template-row: repeat(4, 12.5px)
+
+grid-template = grid-template-rows and grid-template-columns.
+27)
+grid-template: 60% 40% / 200px 1fr
+
+28)
+grid-template: 1fr 50px / 20% 80%
